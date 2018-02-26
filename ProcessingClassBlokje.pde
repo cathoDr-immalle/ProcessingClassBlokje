@@ -11,8 +11,8 @@ void update()
   if(mousePressed)
   {
     i++;
-    Blokje(10+i,10+i,10,10);
-    Blokje(20+i,20+i,10,10);
+    Blokje(10+i,10+i,10+i,10+i);
+    Blokje(20+i,20+i,10+i,10+i);
   }
 }
 
