@@ -9,8 +9,15 @@ Blokje b2 = new Blokje(30,30);
 
 void draw()
 {
+  background(200);
   b1.show();
   b2.show();
+  
+  if(mousePressed && (mouseButton == LEFT))
+  {
+     b1.update();
+     b2.update();
+  }
   
 }
 
@@ -27,7 +34,8 @@ class Blokje
   
   void update()
   {
-    
+    xPos += 1;
+    yPos += 1;
   }
   
   void show()
