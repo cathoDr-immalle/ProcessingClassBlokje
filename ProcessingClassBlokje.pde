@@ -4,26 +4,35 @@ void setup()
   frameRate(30);
 }
 
+Blokje b1 = new Blokje(10,10);
+Blokje b2 = new Blokje(30,30);
 
-void update()
+void draw()
 {
-  int i = 0;
-  if(mousePressed)
-  {
-    i++;
-    Blokje(10+i,10+i,10+i,10+i);
-    Blokje(20+i,20+i,10+i,10+i);
-  }
+  b1.show();
+  b2.show();
+  
 }
 
 class Blokje
 {
-  int xPos1, xPos2, yPos1, yPos2;
-  Blokje(int X1, Y1, X2, Y2)
+  float xPos, yPos, breedte, hoogte;
+  Blokje(float X, float Y)
   {
-    xPos1 = X1;
-    xPos2 = X2;
-    yPos1 = Y1;
-    yPos2 = Y2;
+    xPos = X;
+    yPos = Y;
+    breedte = 10;
+    hoogte = 10;
   }
+  
+  void update()
+  {
+    
+  }
+  
+  void show()
+  {
+    rect(xPos, yPos, breedte, hoogte);
+  }
+  
 }
