@@ -21,6 +21,26 @@ class Blokje
      hoogte += 1;
    }
    
+   void goUP()
+   {
+     yPos -= 1;
+   }
+   
+   void goDOWN()
+   {
+     yPos += 1;
+   }
+   
+   void goRIGHT()
+   {
+     xPos += 1;
+   }
+   
+   void goLEFT()
+   {
+     xPos -= 1;
+   }
+   
    void show()
    {
      rect(xPos, yPos, breedte, hoogte);
