@@ -19,4 +19,10 @@ void draw()
      b2.update();
   }
   
+  if(mousePressed && (mouseButton == RIGHT))
+  {
+    b1.grow();
+    b2.grow();
+  }
+  
 }
