@@ -1,12 +1,15 @@
 class Blokje
  {
-   float xPos, yPos, breedte, hoogte;
-   Blokje(float X, float Y)
+   int xPos, yPos, breedte, hoogte;
+   int origineleB, origineleH;
+   Blokje(int X, int Y)
    {
      xPos = X;
      yPos = Y;
      breedte = 10;
      hoogte = 10;
+     origineleB = breedte;
+     origineleH = hoogte;
    }
    
    void update()
@@ -39,6 +42,12 @@ class Blokje
    void goLEFT()
    {
      xPos -= 1;
+   }
+   
+   void reset()
+   {
+     breedte = origineleB;
+     hoogte  = origineleH;
    }
    
    void show()

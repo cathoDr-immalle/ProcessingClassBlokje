@@ -25,6 +25,13 @@ void draw()
     b2.grow();
   }
   
+  if(keyPressed && key == 'r')
+  {
+    print("RESET\n");
+    b1.reset();
+    b2.reset();
+  }
+  
   if(keyPressed && key == CODED)
   {
      switch(keyCode)
